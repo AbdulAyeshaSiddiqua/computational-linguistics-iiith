@@ -1,0 +1,15 @@
+language_selection:  there should be a selection of  language from the given choice
+
+
+Random_function :  to generate a random sentence.
+                  *to split the given sentence into words and then when we click on it all these words are pushed into another variable from the current variable,and the words should be combined to give a meaningful sentence.
+                  *reform the correct sentence button and "get the correct sentence" button are displayed
+
+CHECK_function:    to check the sentence whether the sentence is right or not.
+                   *If sentence is correct it should result correct answer.
+                   *Else it should return wrong answer i.e; 
+ 
+
+BUTTON_function: button function should be enabled for all the displayed buttons i.e;"reform the sentence","get the correct sentence","check the correctness of the sentence".
+
+OUTPUT:  Group of words in a selected order should be shown.
