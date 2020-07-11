@@ -18,6 +18,11 @@ p2{
     font-size:20px;
 }
 p3{
+     color:darkblue;
+     font-size:20px;
+     font-style: italic;
+}
+p6{
      color:blue;
      font-size:20px;
      font-style: italic;
@@ -25,4 +30,7 @@ p3{
 table{
       margin-left: auto;
       margin-right:auto;
+}
+p{
+   font-size:25px;
 }
