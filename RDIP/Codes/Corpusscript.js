@@ -1,7 +1,13 @@
 
 function display()
 {
- document.getElementById("p4").innerHTML=" "
+ document.getElementById("p4").innerHTML=" ";
+document.getElementById("Reform").innerHTML=" ";
+document.getElementById("Correctness").innerHTML=" ";
+for(i=0;i<10;i++){
+document.getElementById(i).value=" ";
+}
+count1 =0;
  var y=document.getElementById("lan").value;
  if(y=="English"){
  document.getElementById("dis_sen").innerHTML = "Form a sentence(Declarative or Interrogative or any other type)form the given words";
@@ -23,6 +29,7 @@ obj=JSON.parse(text);
 var b=obj.con1[a].a;
 var s=b.split(" ");
 var d=s.length
+document.getElementById("Reform").value = d;
 var g=[];
   var m = 0;
   do {
@@ -68,6 +75,7 @@ obj=JSON.parse(text1);
 var b=obj.con2[a].a;
 var s=b.split(" ");
 var d=s.length
+document.getElementById("Reform").value = d;
 var g=[];
   var m = 0;
   do {
@@ -88,23 +96,35 @@ for(var j=d;j<10;j++){
 
 }
 }
+
+
+var count1 =0;
 function print(i){
+document.getElementById("dis_sen1").innerHTML= "Formed Sentence";
+document.getElementById("sen2").innerHTML= "(After selecting words)";
 var a=document.getElementById(i).value;
+var b=document.getElementById("Reform").value
+count1=count1+1;
 document.getElementById("p4").innerHTML+=a+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp";
 document.getElementById(i).innerHTML=" ";
 document.getElementById("dis_sen1").innerHTML= "Formed Sentence";
 document.getElementById("sen2").innerHTML= "(After selecting words)";
 document.getElementById("Reform").innerHTML= "<button>" + "Re-form the sentence" + "</button>";
+if(count1==b){
+document.getElementById("Correctness").innerHTML="<button>" + "Check the correctness of the sentence" + "</button>";
+}
 }
 
 function reformed() {
+count1 =0;
 document.getElementById("dis_sen1").innerHTML=" "
 document.getElementById("sen2").innerHTML=" "
 document.getElementById("Reform").innerHTML=" "
 document.getElementById("p4").innerHTML=" ";
+document.getElementById("Correctness").innerHTML=" ";
 for(var i=0;i<10;i++){
   var a=document.getElementById(i).value
- if(a!=undefined){
+ if(a!=" "){
 document.getElementById(i).innerHTML="<button>"+a+"</button>"
 document.getElementById("p4").innerHTML=" ";
 }
