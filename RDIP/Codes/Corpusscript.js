@@ -34,6 +34,8 @@ document.getElementById("Correctness").innerHTML=" ";
 document.getElementById("corpus").innerHTML=" ";
 document.getElementById("corpus1").innerHTML=" ";
 document.getElementById("s1").innerHTML=" ";
+document.getElementById("getcorrectness").innerHTML=" ";
+
 for(i=0;i<10;i++){
 document.getElementById(i).value=" ";
 }
@@ -132,6 +134,7 @@ document.getElementById("Correctness").innerHTML=" ";
 document.getElementById("corpus").innerHTML=" ";
 document.getElementById("corpus1").innerHTML=" ";
 document.getElementById("s1").value=" ";
+document.getElementById("getcorrectness").innerHTML=" ";
 
 for(var i=0;i<10;i++){
   var a=document.getElementById(i).value
@@ -147,22 +150,24 @@ if(document.getElementById("lan").value == "English") {
  var v = document.getElementById("s1").value;
 v = v.trim();
  if(v == obj.con1[u].a || v == obj.con1[u].b || v == obj.con1[u].c || v == obj.con1[u].d || v == obj.con1[u].e || v == obj.con1[u].f || v == obj.con1[u].g || v == obj.con1[u].h)
- document.getElementById("corpus").value = "Right answer!!";
-else
-
- document.getElementById("corpus1").value = "Wrong answer!!";
+ document.getElementById("corpus").innerHTML = "Right answer!!";
+else{
+ document.getElementById("corpus1").innerHTML = "Wrong answer!!";
+document.getElementById("getcorrectness").innerHTML="<button>" + "GET CORRECT SENTENCE" + "</button>";
 }
-else
+}
+else{
 if(document.getElementById("lan").value == "Hindi") {
  var u = document.getElementById("random").value;
  var v = document.getElementById("s1").value;
 v = v.trim();
  if(v == obj.con2[u].a || v == obj.con2[u].b || v == obj.con2[u].c || v == obj.con2[u].d || v == obj.con2[u].e || v == obj.con2[u].f || v == obj.con2[u].g || v == obj.con2[u].h || v == obj.con2[u].i || v == obj.con2[u].j || v == obj.con2[u].k || v ==obj.con2[u].l)
- document.getElementById("corpus").value = "Right answer!!";
+ document.getElementById("corpus").innerHTML = "Right answer!!";
 
-else
-
- document.getElementById("corpus1").value = "Wrong answer!!";
- }
+else{
+ document.getElementById("corpus1").innerHTML = "Wrong answer!!";
+document.getElementById("getcorrectness").innerHTML="<button>" + "GET CORRECT SENTENCE" + "</button>";
 }
-
+}
+}
+}
