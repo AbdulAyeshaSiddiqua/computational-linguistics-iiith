@@ -1,0 +1,6 @@
+---->Dropdown menu functionality is used to select the required corpus accordingly.
+---->after selecting corpus 1 we have to understand the content present in that corpus and have to identify"NO.OF TOKENS AND TYPES" present in corpus 1
+---->if the number of tokens and types that we have enteres is correct then it should turn green otherwise red.which means we have to add a functionality which indicates the correct answer and if it is wrong it should have another functionality which turns red.
+---->If the entered number is correct then it should ask to recalculate the types
+---->The "TYPESS" entered after recalculating is correct then it should display right answer otherwise wrong answer.
+---->And the same procedure should be followed for the remaining corpus accordingly.
