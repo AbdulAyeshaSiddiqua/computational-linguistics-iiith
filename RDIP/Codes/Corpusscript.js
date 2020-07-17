@@ -73,7 +73,7 @@ for(var j=d;j<10;j++){
 }
 
 }
-else{
+else if( y == "Hindi"){
  document.getElementById("dis_sen").innerHTML = "Form a sentence(Declarative or Interrogative or any other type)form the given words";
  document.getElementById("dis_sub").innerHTML = "(Select the buttons in proper order)";
 
@@ -101,7 +101,9 @@ for(var i=0;i<d;i++){
 for(var j=d;j<10;j++){
     document.getElementById(j).innerHTML=" "
 }
-
+}
+else{
+alert("select language");
 }
 }
 
